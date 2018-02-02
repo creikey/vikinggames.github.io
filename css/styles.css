@@ -11,8 +11,6 @@ div.title img {
 
 /* Navbar */
 div.menu {
-  margin-right: 40%;
-  margin-left: 40%;
 }
 
 div.menu ul {
@@ -20,6 +18,7 @@ div.menu ul {
   padding: 0;
   overflow: hidden;
   background-color: rgb(240,240,240);
+  text-align: cetner;
 }
 
 div.menu ul li {
@@ -28,7 +27,7 @@ div.menu ul li {
 
 div.menu ul li a {
   display: block;
-  padding: 16px;
+  padding: 13px;
   text-decoration: none;
   font-family: arial;
   font-size: 110%;
