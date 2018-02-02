@@ -1,0 +1,41 @@
+/* Title */
+div.title {
+  text-align: center;
+  font-family: arial;
+}
+
+div.title img {
+  display:inline;
+  overflow: hidden;
+}
+
+/* Navbar */
+div.menu {
+  margin-right: 40%;
+  margin-left: 40%;
+}
+
+div.menu ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(240,240,240);
+}
+
+div.menu ul li {
+  float: left;
+}
+
+div.menu ul li a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 110%;
+  color: black;
+}
+
+div.menu ul li a:hover {
+  color: rgb(240,240,240);
+  background-color: rgb(20,20,20);
+}
