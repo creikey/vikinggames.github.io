@@ -3,8 +3,12 @@ $(function() {
   var calendar = "Calendar"
   var agenda = "Agenda"
   var resources = "Resources"
+  var attendance = "Attendance"
   var path = window.location.pathname;
   var page = path.split("/").pop();
+  if (page == "attendance.html") {
+    attendance = "<b>Attendance</b>"
+  }
   if (page == "index.html") {
     home = "<b>Home</b>"
   }
@@ -32,6 +36,7 @@ $(function() {
         '<li><a href="calendar.html">' + calendar + '</a></li>',
         '<li><a href="agenda.html">' + agenda + '</a></li>',
         '<li><a href="resources.html">' + resources + '</a></li>',
+        '<li><a href="attendance.html">' + attendance + '</a></li>',
       '</ul>',
     '</div>'
   ].join("\n");
