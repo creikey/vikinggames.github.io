@@ -27,6 +27,11 @@ div.menu ul li {
     float: left;
 }
 
+div.menu ul li img {
+  float: right;
+  width: 10%;
+}
+
 div.menu ul li a {
   display: block;
   color: white;
