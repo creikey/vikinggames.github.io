@@ -19,11 +19,9 @@ $(function() {
   }
   var html = [
     '<div class="links">',
-      '<span id="center">',
-        '<a href="https://discordapp.com/invite/5cZQAv3" target="_blank"><img id="center" class="bg" src="css/discord_logo.png" alt="Discord"></a>',
-      '</span>',
-      '<a id="right" href="https://www.sandiegounified.org/schools/la-jolla" target="_blank"><img class="bg" src="css/ljhs_logo.png" alt="La Jolla High School"></a>',
-      '<a id="left" href="https://github.com/vikinggames" target="_blank"><img src="css/github_logo.png" alt="Github"></a>',
+      '<a class="icons" target="_blank" href="https://www.sandiegounified.org/schools/la-jolla"><img src="css/ljhs_logo.png" alt="Vikings"></a>',
+      '<a class="icons" target="_blank" href="https://discordapp.com/invite/5cZQAv3"><img src="css/discord_logo.png" alt="Discord"></a>',
+      '<a class="icons" id="github" target="_blank" href="https://github.com/vikinggames"><img src="css/github_logo.png" alt="Github"></a>',
     '</div>',
     '<div class="title">',
       '<h1>Viking Games</h1>',

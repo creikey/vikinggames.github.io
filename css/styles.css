@@ -12,52 +12,44 @@ div.title h1 {
 
 @media only screen and (max-device-width: 480px) {
   div.title h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 
 /* Links */
+
 div.links {
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 50px;
-  background-color: rgb(50,50,50);
+  background-color: rgb(40,40,40);
 }
 
-div.links a img {
-  height: 50px;
-}
-
-div.links a img.bg {
-  background-color: white;
-}
-
-div.links a img.bg:hover {
-  background-color: black;
-}
-
-div.links span#center {
+a.icons {
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: rgb(220,220,220);
+  height: auto;
 }
 
-div.links a#right {
-  float: right;
-  margin-right: inherit;
+a.icons img {
+  height: 50px;
 }
 
-div.links a#left {
-  float: left;
-  margin-left: inherit;
+a.icons:hover {
+  background-color: rgb(255,255,255);
 }
 
 @media only screen and (max-device-width: 480px) {
   div.links {
-    height: 100px;
+    height: 43px;
   }
-  div.links a img {
-    width: 100px;
+  a.icons {
+    float: right;
+    margin-left: 0px;
+    padding: 2px;
+  }
+  a.icons img {
+    height: 35px;
   }
 }
 
@@ -93,11 +85,14 @@ div.menu ul li a:hover {
 }
 
 @media only screen and (max-device-width: 480px) {
+  div.menu ul li {
+    float: none;
+  }
   div.menu ul li a {
-    font-size: 40px;
+    font-size: 30px;
   }
   div.menu {
-    border-left: solid rgb(20,20,20) 30px;
-    border-right: solid rgb(20,20,20) 30px;
+    border-left: solid rgb(20,20,20) 20px;
+    border-right: solid rgb(20,20,20) 20px;
   }
 }
