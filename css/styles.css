@@ -2,11 +2,63 @@
 div.title {
   text-align: center;
   font-family: arial;
+  background-color: rgb(200,120,120);
 }
 
-div.title img {
-  display:inline;
-  overflow: hidden;
+div.title h1 {
+  border-right: 50px red solid;
+  border-left: 50px red solid;
+}
+
+@media only screen and (max-device-width: 480px) {
+  div.title h1 {
+    font-size: 80px;
+  }
+}
+
+/* Links */
+div.links {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 50px;
+  background-color: rgb(50,50,50);
+}
+
+div.links a img {
+  height: 50px;
+}
+
+div.links a img.bg {
+  background-color: white;
+}
+
+div.links a img.bg:hover {
+  background-color: black;
+}
+
+div.links span#center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.links a#right {
+  float: right;
+  margin-right: inherit;
+}
+
+div.links a#left {
+  float: left;
+  margin-left: inherit;
+}
+
+@media only screen and (max-device-width: 480px) {
+  div.links {
+    height: 100px;
+  }
+  div.links a img {
+    width: 100px;
+  }
 }
 
 /* Navbar */
@@ -27,11 +79,6 @@ div.menu ul li {
     float: left;
 }
 
-div.menu ul li img {
-  float: right;
-  width: 10%;
-}
-
 div.menu ul li a {
   display: block;
   color: white;
@@ -43,4 +90,14 @@ div.menu ul li a {
 
 div.menu ul li a:hover {
   background-color: #111;
+}
+
+@media only screen and (max-device-width: 480px) {
+  div.menu ul li a {
+    font-size: 40px;
+  }
+  div.menu {
+    border-left: solid rgb(20,20,20) 30px;
+    border-right: solid rgb(20,20,20) 30px;
+  }
 }
