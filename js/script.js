@@ -3,8 +3,12 @@ $(function() {
   var calendar = "Calendar"
   var agenda = "Agenda"
   var resources = "Resources"
+  var attendance = "Attendance"
   var path = window.location.pathname;
   var page = path.split("/").pop();
+  if (page == "attendance.html") {
+    attendance = "<b>Attendance</b>"
+  }
   if (page == "index.html") {
     home = "<b>Home</b>"
   }
@@ -18,6 +22,11 @@ $(function() {
     calendar = "<b>Calendar</b>"
   }
   var html = [
+    '<div class="links">',
+      '<a class="icons" target="_blank" href="https://www.sandiegounified.org/schools/la-jolla"><img src="css/ljhs_logo.png" alt="Vikings"></a>',
+      '<a class="icons" target="_blank" href="https://discordapp.com/invite/5cZQAv3"><img src="css/discord_logo.png" alt="Discord"></a>',
+      '<a class="icons" id="github" target="_blank" href="https://github.com/vikinggames"><img src="css/github_logo.png" alt="Github"></a>',
+    '</div>',
     '<div class="title">',
       '<h1>Viking Games</h1>',
     '</div>',
@@ -27,6 +36,7 @@ $(function() {
         '<li><a href="calendar.html">' + calendar + '</a></li>',
         '<li><a href="agenda.html">' + agenda + '</a></li>',
         '<li><a href="resources.html">' + resources + '</a></li>',
+        '<li><a href="attendance.html">' + attendance + '</a></li>',
       '</ul>',
     '</div>'
   ].join("\n");
