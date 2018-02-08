@@ -27,6 +27,7 @@ $(function() {
         '<li><a href="calendar.html">' + calendar + '</a></li>',
         '<li><a href="agenda.html">' + agenda + '</a></li>',
         '<li><a href="resources.html">' + resources + '</a></li>',
+      '<li><img src="css/ljhs_logo.png"></li>',
       '</ul>',
     '</div>'
   ].join("\n");
