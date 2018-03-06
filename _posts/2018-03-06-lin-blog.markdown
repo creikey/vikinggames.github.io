@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Lin Blog"
+date: 2018-03-06 14:46:48
+categories: update
+---
+Hello!
+I am lin!
+I WILL EDIT THIS WHEN I GET HOME!
