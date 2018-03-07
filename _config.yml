@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  vikinggames
+google_calendar: https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=i33vrlk3e1bj7th9ruqk04sgak%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FLos_Angeles
 
 # Build settings
 markdown: kramdown

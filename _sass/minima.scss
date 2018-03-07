@@ -17,6 +17,7 @@ $background-color: #fdfdfd !default;
 $content-background-color: #f7f7f7 !default;
 // $brand-color:      #2a7ae2 !default;
 $brand-color:      #aa0000 !default;
+$sidebar-background-color: darken($background-color, 30%) !default;
 
 // $grey-color:       #828282 !default;
 $grey-color:       #000000 !default;
@@ -39,8 +40,12 @@ $on-laptop:        900px !default;
 //   }
 // }
 
-#calendar {
-  border: none;
+#sidebar {
+  position:fixed;
+  top:0; bottom:0; left:0;
+  width:400px;
+  background: $sidebar-background-color;
+  overflow: hidden;
 }
 
 @mixin media-query($device) {
