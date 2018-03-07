@@ -4,7 +4,14 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
-header: Github
+header: Home
 ---
+> "We are the game developers of La Jolla" - Founder
+
+<h1 style="text-align:center"><a href="https://discord.gg/5cZQAv3">Discord</a></h1>
+<iframe src="https://discordapp.com/widget?id=360250209504067584&theme=dark" width="100%" height="350" allowtransparency="true" frameborder="0"></iframe>
+
+
+<h1 style="text-align:center"><a href="https://github.com/vikinggames">Github</a></h1>
 <div class="github-card" data-github="vikinggames" data-width="100%" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
