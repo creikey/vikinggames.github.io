@@ -9,6 +9,9 @@ serve:
 autogen:
 	bundle exec jekyll build --watch
 
+debug:
+	bundle exec jekyll build --trace
+
 clean: 
 	-rm -r .sass_cache/
 	-rm -r _site/*

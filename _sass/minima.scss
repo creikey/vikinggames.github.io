@@ -17,7 +17,7 @@ $background-color: #fdfdfd !default;
 $content-background-color: #f7f7f7 !default;
 // $brand-color:      #2a7ae2 !default;
 $brand-color:      #aa0000 !default;
-$sidebar-background-color: darken($background-color, 30%) !default;
+$sidebar-background-color: darken($background-color, 5%) !default;
 
 // $grey-color:       #828282 !default;
 $grey-color:       #000000 !default;
@@ -29,8 +29,11 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width:    900px !default;
 
+// Sidebar min Width
+
 $on-palm:          600px !default;
 $on-laptop:        900px !default;
+$hide-sidebar:     1300px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -40,13 +43,70 @@ $on-laptop:        900px !default;
 //   }
 // }
 
+.sidebar-wrapper {
+  position: fixed;
+  width: 100%;
+  // background-color: red;
+}
+
+.sidebar-wrapper #button {
+  float: right;
+  margin: auto;
+  border: 1px solid black;
+  border-top: none;
+  background-color: $background-color;
+  height: 20px;
+  padding: 10px;
+  width: 63px;
+}
+
+.sidebar-wrapper #button:hover {
+  background-color: $grey-color;
+  color: white;
+}
+
+.sidebar-wrapper #button:hover .side-bar-wrapper #content {
+  display: none;
+}
+
+/*
 #sidebar {
+  opacity: 0;
+  transition: opacity 0.2s linear;
   position:fixed;
-  top:0; bottom:0; left:0;
-  width:400px;
+  top:100px; bottom:200px; left:20px;
+  width: 400px;
+  padding: 10px;
   background: $sidebar-background-color;
   overflow: hidden;
+  @media screen and (min-width: $hide-sidebar) {
+    opacity: 1 !important;
+  }
 }
+
+#calendar-button {
+  border: 4px solid black;
+  border-top: none;
+  background-color: $background-color;
+  transition: opacity 0.2s linear;
+  margin: auto;
+  height: 20px;
+  padding: 10px;
+  width: 63px;
+  opacity: 0;
+  @media screen and (max-width: $hide-sidebar) {
+    opacity: 1;
+  }
+}
+
+#calendar-button:hover {
+  background-color: $grey-color;
+  color: white;
+}
+
+#calendar-button:hover #sidebar {
+    opacity: 1;
+}*/
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

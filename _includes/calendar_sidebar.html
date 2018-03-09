@@ -1,5 +1,10 @@
 {% if site.google_calendar %}
-<div id="sidebar">
-  <iframe src="{{ site.google_calendar }}" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+<div class="sidebar-wrapper">
+  <div id="button">
+    <p>Calendar</p>
+  </div>
+  <div id="content">
+    <iframe src="{{ site.google_calendar }}" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
 </div>
 {% endif %}
