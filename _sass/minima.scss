@@ -49,24 +49,20 @@ $hide-sidebar:     1300px !default;
   // background-color: red;
 }
 
-.sidebar-wrapper #button {
+.sidebar-wrapper button {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   float: right;
   margin: auto;
   border: 1px solid black;
   border-top: none;
   background-color: $background-color;
-  height: 20px;
   padding: 10px;
-  width: 63px;
 }
 
-.sidebar-wrapper #button:hover {
+.sidebar-wrapper button:hover {
   background-color: $grey-color;
   color: white;
-}
-
-.sidebar-wrapper #button:hover .side-bar-wrapper #content {
-  display: none;
 }
 
 /*
